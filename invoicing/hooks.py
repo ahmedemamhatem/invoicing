@@ -7,6 +7,19 @@ app_license = "mit"
 
 # Apps
 # ------------------
+fixtures = [
+    {"doctype": "Custom Field"},
+    {"doctype": "Translation"},
+    {"doctype": "Property Setter"}
+]
+
+# Installation
+# ------------
+after_install = "invoicing.install.set_workspace_visibility"
+
+# Migration
+# ------------
+after_migrate = "invoicing.install.set_workspace_visibility"
 
 # required_apps = []
 
@@ -15,7 +28,7 @@ app_license = "mit"
 # 	{
 # 		"name": "invoicing",
 # 		"logo": "/assets/invoicing/logo.png",
-# 		"title": "Invoicing",
+# 		"title": "Mini System",
 # 		"route": "/invoicing",
 # 		"has_permission": "invoicing.api.permission.has_app_permission"
 # 	}
